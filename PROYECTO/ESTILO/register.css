@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #3494e6, #ec6ead); /* Blue gradient colors */
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+#login_div {
+    margin-top: 100px;
+    background: linear-gradient(to top, #ffffff2e, #ffffff2e); /* Black gradient colors */
+    /* Add any additional styling for your div */
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    color: #ffffff; /* Optional: Set text color to white or a contrasting color */
+    text-align: center;
+    padding: 20px;
+}
+
+.input_form_register {
+    background-color: rgba(252, 252, 252, 0.5);
+    color: #ffffff;
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.boton_registro {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #00000065;
+}
+
+a:link:hover {
+    color: #ce3b85;
+    text-decoration: none;
+}
+  
