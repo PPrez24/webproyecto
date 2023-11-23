@@ -1,0 +1,63 @@
+@host = http://localhost:3000
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImN1YWpvQGl0ZXNvLm14IiwiaWF0IjoxNjg0MTE5MTQ3LCJleHAiOjE2ODQxMjI3NDd9.MsTndo-KGAgzvOdrT2k_vXARH7A7B19EUsBxBZBbO5I
+###
+POST {{host}}/api/tarea
+Content-Type: application/json
+
+{
+    "titulo" : "Trabajo",
+    "descripcion" : "Entregar reportes financieros"
+}
+
+###
+GET {{host}}/api/horario
+
+###
+DELETE {{host}}/api/tarea/dS8A3459UY5I7iq__HcLR
+
+###
+PUT {{host}}/api/horario/tarea/dS8A3459UY5I7iq__HcLR
+Content-Type: application/json
+
+{
+    "deleted" : "true",
+    "uid_materia" : "pKsMMpAdzSN8TrzonUwaS"
+}
+
+###
+PUT {{host}}/api/horario/dS8A3459UY5I7iq__HcLR
+Content-Type: application/json
+
+{
+    "titulo" : "Gastos",
+    "descripcion" : "Comprar lavadora"
+}
+
+###
+POST {{host}}/api/user
+Content-Type: application/json
+
+{
+    "mail" : "pruebaH@iteso.mx",
+    "password" : "estaesunaprueba",
+    "tareas" : [],
+    "registro" : true
+}
+
+###
+GET {{host}}/api/user
+x-token: {{token}}
+###
+DELETE {{host}}/api/user/2xHsvbIVEhB4tuNk3-rMl
+
+###
+POST {{host}}/api/user
+Content-Type: application/json
+
+{
+    "mail" : "pepe@iteso.mx",
+    "password" : "123"
+}
+
+###
+DELETE {{host}}/api/user/pSBhhPYhPqTE4gETE4j0Z
